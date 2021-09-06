@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:dorra/contenu.dart';
+import 'package:dorra/crush.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -19,7 +20,7 @@ class _openState extends State<open> {
   }
 
   void navigationPage() {
- Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {return Home();}));
+ Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {return MainPage();}));
   }
 
   @override
@@ -42,7 +43,29 @@ class _openState extends State<open> {
             decoration: new BoxDecoration(
                 color: Color(0xffF9DBE7)
             ),
-            child:  Center(child: Lottie.asset('assets/love.json'),),
+            child:  Center(child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text("DORRA",style: TextStyle(color:Color(0xFFEE507A),fontSize: 35,
+                  fontWeight: FontWeight.bold,fontFamily: 'Pacifico',
+                  shadows: <Shadow>[
+                    Shadow(
+                      offset: Offset(10.0, 10.0),
+                      blurRadius: 8.0,
+                      color: Colors.white,
+
+                    ),
+                  ],
+                ),),
+                Lottie.asset(
+                    'assets/sad.json',
+                  height:400,
+
+
+                ),
+              ],
+            ),),
           ),
 
 

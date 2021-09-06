@@ -21,39 +21,33 @@ class _MainPageState extends State<MainPage> {
             begin: Alignment.topLeft,
             end: Alignment(0.8, 0.0),
             colors: [
-              Color(0xFFFFF9C4),
+
               Color(0xFFFFCDD2),
+              Color(0xFFFFF1d4),
+
+
             ],
           ),),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
 
           children: <Widget>[
+            SizedBox(height: 30,),
+            Center(
+              child: Image(
+                image: AssetImage(
+                  'assets/luv.png',
+                ),
+              ),
+            ),
             SizedBox(height: 20,),
-            Text("I love you",style: TextStyle(color:Color(0xFFEE507A),fontSize: 40,
-              fontWeight: FontWeight.bold,fontFamily: 'Pacifico',
-              shadows: <Shadow>[
-                Shadow(
-                  offset: Offset(10.0, 10.0),
-                  blurRadius: 8.0,
-                  color: Colors.white,
-
-                ),
-              ],
-            ),),
-            Text("my all",style: TextStyle(color:Color(0xFFEE507A),fontSize: 40,
-              fontWeight: FontWeight.bold,fontFamily: 'Pacifico',
-              shadows: <Shadow>[
-                Shadow(
-                  offset: Offset(10.0, 10.0),
-                  blurRadius: 8.0,
-                  color: Colors.white,
-
-                ),
-              ],
-            ),),
             Image.asset("assets/heart.png",width: 300.0,),
-            Text("Dorra",style: TextStyle(color:Color(0xFFEE507A),fontSize: 40,
+            /* Text("Dorra",style: TextStyle(color:Color(0xFFEE507A),fontSize: 70,
+              fontWeight: FontWeight.bold,
+
+            ),),
+            Text("DORRA",style: TextStyle(color:Color(0xFFEE507A),fontSize: 50,
               fontWeight: FontWeight.bold,fontFamily: 'Pacifico',
               shadows: <Shadow>[
                 Shadow(
@@ -64,21 +58,17 @@ class _MainPageState extends State<MainPage> {
                 ),
               ],
             ),),
-          /*  Text("DORRA",style: TextStyle(color:Color(0xFFEE507A),fontSize: 50,
-              fontWeight: FontWeight.bold,fontFamily: 'Pacifico',
-              shadows: <Shadow>[
-                Shadow(
-                  offset: Offset(10.0, 10.0),
-                  blurRadius: 8.0,
-                  color: Colors.white,
-
-                ),
-              ],
-            ),),*/
             Align(
               alignment: Alignment.bottomRight,
               child: Lottie.asset('assets/minlouta.json',width: 200,height: 170) ,
-            )
+            )*/
+            Center(
+              child: Image(
+                image: AssetImage(
+                  'assets/sorry.png',
+                ),
+              ),
+            ),
 
           ],
         ),
